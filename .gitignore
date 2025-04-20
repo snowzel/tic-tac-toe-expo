@@ -36,3 +36,131 @@ yarn-error.*
 *.tsbuildinfo
 
 app-example
+
+# OSのファイル
+.DS_Store
+*.log
+*.swp
+desktop.ini
+thumbs.db
+
+# Node
+#node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp/
+.pnp.js
+
+# Expo関連
+.expo/
+.expo-shared/
+#web-build/
+dist/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+
+# Android / Gradle
+/android/app/build/
+/android/.gradle/
+/android/build/
+/android/app/release/
+/android/captures/
+/android/local.properties
+/android/keystore.properties
+/android/.idea/
+/android/*.iml
+*.apk
+*.aab
+*.hprof
+
+# iOS
+/ios/build/
+/ios/Pods/
+/ios/Podfile.lock
+/ios/*.xcworkspace
+/ios/*.xcuserstate
+/ios/.xcode.env.local
+/ios/DerivedData/
+/ios/Frameworks/
+/ios/*.ipa
+/ios/*.dSYM.zip
+/ios/*.dSYM
+
+# IDE - IntelliJ IDEA / Android Studio
+.idea/
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+.idea/**/contentModel.xml
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+.idea/**/dbnavigator.xml
+.idea/**/gradle.xml
+.idea/**/libraries
+.idea/**/caches/
+.idea/**/artifacts/
+.idea/**/compiler.xml
+.idea/**/jarRepositories.xml
+.idea/**/modules.xml
+.idea/**/misc.xml
+.idea/**/deviceStreaming.xml
+.idea/**/*.iml
+*.iml
+*.iws
+out/
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/
+
+# APIキーと秘密情報
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+google-services.json
+GoogleService-Info.plist
+
+# ビルド出力と生成ファイル
+/build/
+.cxx/
+
+# テスト
+/coverage/
+
+# 一時ファイル
+/temp/
+/tmp/
+*.tmp
+
+# 特定のEASビルドディレクトリ
+/android/app/src/main/assets/shell-app-manifest.json
+/android/app/src/main/assets/shell-app.bundle
+/android/app/src/main/res/drawable-*/shell_launch_background_image.png
+/ios/Exponent.xcodeproj/xcshareddata/
+
+# キャッシュファイル
+.gradle/
+.babel-cache/
+.eslintcache
+
+# ログファイル
+npm-debug.log
+yarn-error.log
+eas-cli.log

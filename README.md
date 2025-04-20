@@ -1,50 +1,108 @@
-# Welcome to your Expo app 👋
+# Expo 〇×ゲーム
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+![〇×ゲーム画面](https://storage.googleapis.com/zenn-user-upload/cea68fe0b44b-20250420.png)
 
-## Get started
+## 概要
 
-1. Install dependencies
+このプロジェクトは、WindowsパソコンとExpoを使ってAndroid向けの〇×ゲーム（Tic-Tac-Toe）を開発したチュートリアルアプリケーションです。React Nativeの基本概念を学ぶための教材として作成されました。
 
-   ```bash
-   npm install
-   ```
+## 機能
 
-2. Start the app
+- シンプルな〇×ゲームの基本機能
+- 2人プレイヤー対戦モード
+- 勝敗判定と引き分け検出
+- ゲームリセット機能
 
-   ```bash
-    npx expo start
-   ```
+## 使用技術
 
-In the output, you'll find options to open the app in a
+- React Native
+- Expo
+- JavaScript / JSX
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 環境構築
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### 前提条件
 
-## Get a fresh project
+- Node.js (バージョン18.x以上)
+- npm または yarn
+- Android Studio (Android開発用)
+- スマートフォンまたはエミュレータ
 
-When you're ready, run:
+### インストール手順
 
+1. リポジトリをクローン
 ```bash
-npm run reset-project
+git clone https://github.com/snowzel/tic-tac-toe-expo.git
+cd tic-tac-toe-expo
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2. 依存パッケージのインストール
+```bash
+npm install
+# または
+yarn install
+```
 
-## Learn more
+3. アプリの起動
+```bash
+npx expo start
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+4. Expo Goアプリでスキャン、またはエミュレータで実行
+   - 表示されるQRコードをExpo Goアプリでスキャン
+   - または「a」キーを押してAndroidエミュレータで実行
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## プロジェクト構造
 
-## Join the community
+```
+TicTacToeGame/
+├── app/                  # アプリケーションのメインコード
+│   └── index.js          # アプリのエントリーポイント
+├── assets/               # 画像やフォントなどのアセット
+├── components/           # 再利用可能なコンポーネント
+│   └── ui/               # UIコンポーネント
+│       ├── Board.jsx     # ゲームボード
+│       └── Game.jsx      # ゲームロジック
+├── constants/            # 定数やテーマなど
+└── hooks/                # カスタムReactフック
+```
 
-Join our community of developers creating universal apps.
+## 開発者向け情報
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+このプロジェクトは教育目的で作成されたものです。以下の記事で解説しています。
+
+- [WindowsとExpoでAndroid用〇×ゲームを作る方法](https://zenn.dev/articles/cc0e3fe042ceec)
+
+
+## 拡張アイデア
+
+- AIプレイヤーの追加
+- スコア記録機能
+- 対戦履歴の表示
+- テーマカスタマイズ
+- サウンドエフェクト
+
+## ライセンス
+
+MIT License
+
+Copyright (c) 2025 snowzel
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
